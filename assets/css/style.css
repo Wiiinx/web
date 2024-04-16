@@ -1268,6 +1268,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
+  .skills-title {
+        color: #ffffff; /* Re-assert the color for mobile screens */
+
+    }
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Or 'flex-start' if you want them aligned to the left */
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-item {
+    font-size: 20px;
+    width: auto; /* Changed from fixed width to 'auto' */
+
+    margin: 0px; /* Optional: for spacing around each icon */
+}
 
 }
 
