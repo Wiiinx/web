@@ -134,7 +134,7 @@
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/in/wuyue403/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -1072,7 +1072,7 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1096,6 +1096,13 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("wuniii"); // Replace 'your_user_id' with your actual EmailJS user ID
+     })();
+  </script>
 
   <!--
     - ionicon link

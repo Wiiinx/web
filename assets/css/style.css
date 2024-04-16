@@ -8,6 +8,15 @@
  */
 
 
+@font-face {
+    font-family: 'My3DFont';
+    src: url('3D-Fonts.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'KaFont';  /* Custom font for ka1.ttf */
+    src: url('ka1.ttf') format('truetype');
+}
+
 
 
 
@@ -75,6 +84,7 @@
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
+  --ff-3d: 'My3DFont', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -161,7 +171,6 @@ body { background: var(--smoky-black); }
 
 
 
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -229,9 +238,14 @@ article.active {
   text-transform: capitalize;
 }
 
-.h2 { font-size: var(--fs-1); }
+.h2 {
+  font-size: 40px;
 
-.h3 { font-size: var(--fs-2); }
+}
+
+.h3 {
+  font-size: var(--fs-2);
+}
 
 .h4 { font-size: var(--fs-4); }
 

@@ -136,7 +136,15 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-
+document.querySelector('.form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+  emailjs.sendForm('service_7cylize', 'template_32v7t6i', this)
+    .then(function() {
+      alert("Message Sent Successfully!");
+    }, function(error) {
+      alert("Failed to send the message, please try again.");
+    });
+});
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
